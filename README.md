@@ -21,7 +21,7 @@ A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 Print Odd
 * [Autograder for 6.2.8](https://codehs.com/app/assignments/course/358127?module=142279256&lesson=142279267)
 
 ## Developer Notes
-The following JSON library JAR file is reference, but (apparently) never used:
+The following JSON library JAR file is referenced and needs to be present to run this code stand-alone:
 ```xml
 <component name="libraryTable">
   <library name="json" type="repository">
@@ -34,3 +34,6 @@ The following JSON library JAR file is reference, but (apparently) never used:
   </library>
 </component>
 ```
+
+## What Mother (CodeHS) Never Told You About Customizing Java Autograders
+1. There are multiple `main` programs.  Ignore the one in ConsoleProgram.java.

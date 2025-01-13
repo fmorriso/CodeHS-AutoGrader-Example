@@ -1,5 +1,5 @@
-# CodeHS Autograder example AP CS A - 6.2.8 - Print Odd Array Indicies
-A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 Print Odd Array Indicie
+# CodeHS Autograder example AP CS A - 6.2.8 - Print Print Every Third Index
+A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 Print Every Third Index
 
 ## Tools Used
 

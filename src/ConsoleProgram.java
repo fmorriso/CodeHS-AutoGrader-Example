@@ -64,29 +64,38 @@ public class ConsoleProgram
      */
     public static void main(String[] args) throws Exception{
 
+        /* Obsolete
         if(args.length == 0){
             System.out.println("Please provide the name of the main class as an argument.");
             return;
         }
 
+
         String mainClassName = args[0];
+        */
 
         try{
-            Class mainClass = Class.forName(mainClassName);
+            //Class mainClass = Class.forName(mainClassName); //  ConsoleProgram            
+            Class<ConsoleProgram> mainClass= ConsoleProgram.class;
 
             //OBSOLETE: Object obj = mainClass.newInstance();
-            Constructor<?> constructor = mainClass.getConstructor();
-            Object obj = constructor.newInstance();
+            Constructor<ConsoleProgram> constructor = mainClass.getConstructor();
+            
+            //OBSOLETE: Object obj = constructor.newInstance();
+            //OBSOLETE: ConsoleProgram program = (ConsoleProgram)obj;
 
-            ConsoleProgram program = (ConsoleProgram)obj;
+            ConsoleProgram program = constructor.newInstance();            
             program.run();
         } catch (IllegalAccessException ex) {
             System.out.println("Error in program. Make sure you extend ConsoleProgram");
         } catch (InstantiationException ex) {
             System.out.println("Error in program. Make sure you extend ConsoleProgram");
-        } catch (ClassNotFoundException ex) {
+        } 
+        /* unreachable after fixing obsolete code
+        catch (ClassNotFoundException ex) {
             System.out.println("Error in program. Make sure you extend ConsoleProgram");
         }
+        */
     }
 
     /**

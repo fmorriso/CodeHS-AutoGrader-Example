@@ -7,6 +7,7 @@ public class Grader
 {
     public static void main(String [] args)
     {
+        System.out.println("Top of main method inside Grader.java");
         Autograder grader = new Autograder();
 
         PrintOdd s1 = new PrintOdd();

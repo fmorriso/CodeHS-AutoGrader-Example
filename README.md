@@ -38,5 +38,5 @@ The following JSON library JAR file is referenced and needs to be present to run
 ## What Mother (CodeHS) Never Told You About Customizing Java Autograders
 1. There are multiple `main` programs.  Ignore the one in ConsoleProgram.java.
 1. Most of your work will be performed in `grader.java`.
-   1. They ues far too many "magic strings"that have to repeat in several places instead of well chosen variable names. This make is extremely difficult to change the name of the existing tests or add new ones.
+   1. They use far too many "magic strings"that have to repeat in several places instead of well chosen variable names. This make is extremely difficult to change the name of the existing tests or add new ones.
 1. If all possible, try to develop a local stand-alone test harness on your own laptop, but make sure you download the extra JAR file to support the ` 

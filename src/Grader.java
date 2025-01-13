@@ -5,10 +5,8 @@
 
 import java.util.*;
 
-public class Grader
-{
-    public static void main(String [] args)
-    {
+public class Grader {
+    public static void main(String[] args) {
         System.out.println("Top of main method inside Grader.java");
         Autograder grader = new Autograder();
 
@@ -23,8 +21,7 @@ public class Grader
         String test1Name = generateTestName(test1);
 
         int[] test2 = new int[]{1, 2, 3, 4, 5};
-        String test2Name =  generateTestName(test2);
-
+        String test2Name = generateTestName(test2);
 
         int[] test3 = new int[]{1};
         String test3Name = generateTestName(test3);
@@ -62,13 +59,11 @@ public class Grader
         s1SolOutput = grader.getOutput(solutionClassName);
 
         // do a bit of formatting
-        if (s1Output.contains("You forgot to print something"))
-        {
+        if (s1Output.contains("You forgot to print something")) {
             s1Output = "\"\"";
         }
 
-        if (s1SolOutput.contains("You forgot to print something"))
-        {
+        if (s1SolOutput.contains("You forgot to print something")) {
             s1SolOutput = "\"\"";
         }
 
@@ -83,13 +78,11 @@ public class Grader
         s1SolOutput = grader.getOutput(solutionClassName);
 
         // do a bit of formatting
-        if (s1Output.contains("You forgot to print something"))
-        {
+        if (s1Output.contains("You forgot to print something")) {
             s1Output = "\"\"";
         }
 
-        if (s1SolOutput.contains("You forgot to print something"))
-        {
+        if (s1SolOutput.contains("You forgot to print something")) {
             s1SolOutput = "\"\"";
         }
 

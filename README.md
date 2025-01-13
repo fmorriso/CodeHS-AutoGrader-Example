@@ -17,3 +17,18 @@ A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 Print Odd
 
 ## References
 * [Autograder for 6.2.8](https://codehs.com/app/assignments/course/358127?module=142279256&lesson=142279267)
+
+## Developer Notes
+The following JSON library JAR file is reference, but (apparently) never used:
+```xml
+<component name="libraryTable">
+  <library name="json" type="repository">
+    <properties maven-id="org.json:json:20250107" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20250107/json-20250107.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
+```

@@ -36,4 +36,4 @@ The following JSON library JAR file is referenced and needs to be present to run
 ```
 
 ## What Mother (CodeHS) Never Told You About Customizing Java Autograders
-1. There are multiple `main` programs.  Ignore the one in ConsoleProgram.java.
+1. There are multiple `main` programs.  Ignore the one in _ConsoleProgram.java_.

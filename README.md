@@ -1,5 +1,5 @@
 # CodeHS Autograder example AP CS A - 6.2.8 - Print Every Third Index
-A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 - Print Every Third Index
+A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 Print Every Third Index
 
 ## Tools Used
 
@@ -12,10 +12,10 @@ A CodeHS Autograder example based on Unit 6 of AP CS A - problem 6.2.8 - Print E
 
 ## Change History
 
-| Date       | Description                     |
-|:-----------|:--------------------------------|
-| 2025-01-12 | Initial creation                |
-| 2025-01-13 | Rename top level directory repo |
+| Date       | Description                |
+|:-----------|:---------------------------|
+| 2025-01-12 | Initial creation           |
+| 2025-01-13 | Rename top level directory |
 
 ## References
 * [Autograder for 6.2.8](https://codehs.com/app/assignments/course/358127?module=142279256&lesson=142279267)
@@ -36,4 +36,7 @@ The following JSON library JAR file is referenced and needs to be present to run
 ```
 
 ## What Mother (CodeHS) Never Told You About Customizing Java Autograders
-1. There are multiple `main` programs.  Ignore the one in _ConsoleProgram.java_.
+1. There are multiple `main` programs.  Ignore the one in ConsoleProgram.java.
+1. Most of your work will be performed in `grader.java`.
+   1. They ues far too many "magic strings"that have to repeat in several places instead of well chosen variable names. This make is extremely difficult to change the name of the existing tests or add new ones.
+1. If all possible, try to develop a local stand-alone test harness on your own laptop, but make sure you download the extra JAR file to support the ` 

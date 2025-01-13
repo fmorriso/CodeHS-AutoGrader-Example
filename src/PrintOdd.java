@@ -1,5 +1,7 @@
 public class PrintOdd extends ConsoleProgram{
-    public void run(){}
+    public void run(){
+        System.out.println("The do nothing useful run() method of class PrintOdd was called.");
+    }
 
     public void printOddIndices(int[] arr){
         //NOTICE the starting value and the increment amount

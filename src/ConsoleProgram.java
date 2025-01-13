@@ -62,7 +62,7 @@ public class ConsoleProgram
      * necessary.
      * @param args class name to run should be the first argument
      */
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
 
         /* Obsolete
         if(args.length == 0){

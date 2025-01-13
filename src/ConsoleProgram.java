@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+//
+import java.lang.reflect.Constructor;
 
 public class ConsoleProgram
 {
@@ -60,7 +62,7 @@ public class ConsoleProgram
      * necessary.
      * @param args class name to run should be the first argument
      */
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
 
         if(args.length == 0){
             System.out.println("Please provide the name of the main class as an argument.");
@@ -71,7 +73,11 @@ public class ConsoleProgram
 
         try{
             Class mainClass = Class.forName(mainClassName);
-            Object obj = mainClass.newInstance();
+
+            //OBSOLETE: Object obj = mainClass.newInstance();
+            Constructor<?> constructor = mainClass.getConstructor();
+            Object obj = constructor.newInstance();
+
             ConsoleProgram program = (ConsoleProgram)obj;
             program.run();
         } catch (IllegalAccessException ex) {

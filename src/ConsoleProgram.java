@@ -63,7 +63,7 @@ public class ConsoleProgram
      * @param args class name to run should be the first argument
      */
     public static void main(String[] args) throws Exception {
-
+        System.out.println("top of main in ConsoleProgram");
         /* Obsolete
         if(args.length == 0){
             System.out.println("Please provide the name of the main class as an argument.");
